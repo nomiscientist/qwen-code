@@ -1,6 +1,6 @@
 {
   "name": "@qwen-code/qwen-code-core",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Qwen Code Core",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node ../../scripts/build_package.js",
+    "build": "node init && node ../../scripts/build_package.js",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
     "test": "vitest run",

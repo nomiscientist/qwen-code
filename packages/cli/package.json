@@ -1,6 +1,6 @@
 {
   "name": "@qwen-code/qwen-code",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Qwen Code",
   "repository": {
     "type": "git",
@@ -12,8 +12,8 @@
     "qwen": "dist/index.js"
   },
   "scripts": {
-    "build": "node ../../scripts/build_package.js",
-    "start": "node dist/index.js",
+    "build": "node init && node ../../scripts/build_package.js",
+    "start": "node init && node dist/index.js",
     "debug": "node --inspect-brk dist/index.js",
     "lint": "eslint . --ext .ts,.tsx",
     "format": "prettier --write .",
@@ -25,7 +25,7 @@
     "dist"
   ],
   "config": {
-    "sandboxImageUri": "ghcr.io/qwenlm/qwen-code:0.0.13"
+    "sandboxImageUri": "ghcr.io/qwenlm/qwen-code:0.0.14"
   },
   "dependencies": {
     "@google/genai": "1.9.0",

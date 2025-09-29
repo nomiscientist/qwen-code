@@ -2,7 +2,7 @@
   "name": "qwen-code-vscode-ide-companion",
   "displayName": "Qwen Code Companion",
   "description": "Enable Qwen Code with direct access to your VS Code workspace.",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "publisher": "qwenlm",
   "icon": "assets/icon.png",
   "repository": {
@@ -97,7 +97,7 @@
   "type": "module",
   "scripts": {
     "vscode:prepublish": "npm run generate:notices && npm run check-types && npm run lint && node esbuild.js --production",
-    "build": "npm run compile",
+    "build": "node init && npm run compile",
     "compile": "npm run check-types && npm run lint && node esbuild.js",
     "watch": "npm-run-all -p watch:*",
     "watch:esbuild": "node esbuild.js --watch",

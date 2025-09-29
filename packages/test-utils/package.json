@@ -1,12 +1,12 @@
 {
   "name": "@qwen-code/qwen-code-test-utils",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "private": true,
   "main": "src/index.ts",
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "build": "node ../../scripts/build_package.js",
+    "build": "node init && node ../../scripts/build_package.js",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
